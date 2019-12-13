@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringCloud-EureKa" />
+        <module name="SpringCloud-ServiceA" />
+        <module name="SpringCloud-ServiceB" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringCloud-EureKa" target="1.8" />
+      <module name="SpringCloud-ServiceA" target="1.8" />
+      <module name="SpringCloud-ServiceB" target="1.8" />
+      <module name="SpringCloudA" target="1.8" />
+      <module name="springcloudparent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
