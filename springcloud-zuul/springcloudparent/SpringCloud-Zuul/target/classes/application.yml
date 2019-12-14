@@ -1,0 +1,25 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: service-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+zuul:
+  routes:
+    #服务名称，随便取
+    service-a:
+      #用什么路径取服务对应的服务
+      path: /a/**
+      #serviceId，对应了服务名称
+      serviceId: service-a
+      #url: http://localhost:8888/ #也可以使用请求路径，不用服务名称
+    service-b:
+      path: /b/**
+      serviceId: service-b
+
